@@ -1,2 +1,4 @@
-// TODO: Render the `App` component to the DOM
+ReactDOM.render(<App keyID={window.YOUTUBE_API_KEY} searchYouTube={searchYouTube}/>,
+document.getElementById('app')
+);
 

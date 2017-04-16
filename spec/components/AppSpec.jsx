@@ -30,7 +30,7 @@ describe('App', function() {
 
   it('should update the video player when a video entry\'s title is clicked', function() {
     // This test will only works once `App` is refactored into a stateful class component
-    // because `renderIntoDocument` does not work with stateless class components
+    // because `renderIntoDocument` does not work with stateless class componentsdebugger;
     expect(React.Component.isPrototypeOf(App)).to.be.true;
 
     var videoEntryTitleElements = scryRenderedDOMComponentsWithClass(app, 'video-list-entry-title');
@@ -46,7 +46,7 @@ describe('App', function() {
     });
   });
 
-  xdescribe('when rendering live data from YouTube', function() {
+  describe('when rendering live data from YouTube', function() {
     var searchYouTubeStub;
 
     beforeEach(function() {
